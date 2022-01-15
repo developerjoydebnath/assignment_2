@@ -109,11 +109,13 @@
 .cards .card-inside .card .card-details{
     margin: 15px;
 }
-.cards .card-inside .card .card-details h3{
-    font-size: 25px;
+.cards .card-inside .card .card-details h4{
+    font-size: 30px;
+    font-weight: 500;
 }
 .cards .card-inside .card .card-details h3{
     font-weight: 200;
+    font-size: 20px;
 }
 .cards .card-inside .card .card-details h3 small{
     color: rgb(148, 3, 3);
