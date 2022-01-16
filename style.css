@@ -18,6 +18,9 @@
     align-items: center;
     width: 100%;
 }
+.navbar .nav-left{
+    margin-left: 30px;
+}
 .navbar .nav-right ul{
     display: flex;
     
@@ -26,13 +29,14 @@
     list-style: none;
     margin: 0 10px;
 }
-.navbar .nav-right ul li a{
+.navbar .nav-right ul li a, .navbar .nav-right ul li i{
     text-decoration: none;
     color: #000;
     font-size: 20px;
     font-weight: 700;
     padding: 10px 5px;
 }
+
 
 /* top div starts */
 .top{
@@ -42,6 +46,7 @@
 }
 .top .top-left{
     max-width: 725px;
+    margin: 0 0 0 20px;
 }
 .top .top-left h1{
     font-size: 50px;
@@ -53,20 +58,25 @@
 }
 .top .top-left a{
     display: inline-block;
+    font-weight: 700;
     text-decoration: none;
     font-size: 25px;
     padding: 10px 60px;
     margin: 20px 0;
     color: white;
     border-radius: 30px;
-    background-color: rgb(0, 26, 255);
+    background-color: rgb(0, 0, 0);
+}
+.top .top-left a .fas{
+    margin-left: 10px;
 }
 .top .top-right{
     width: 500px;
-    height: 500px;
+    height: 460px;
 }
 .top .top-right img{
-    width: 100%;
+    width: 500px;
+    height: 450px;
 }
 
  
@@ -76,9 +86,12 @@
 }
 .company-icon .icn{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     margin: 60px 0;
+    justify-content: center;
+    text-align: center;
 }
+
 
 .txt{
     text-align: center;
@@ -109,7 +122,7 @@
 .cards .card-inside .card .card-details{
     margin: 15px;
 }
-.cards .card-inside .card .card-details h4{
+.cards .card-inside .card .card-details h2{
     font-size: 30px;
     font-weight: 500;
 }
@@ -125,6 +138,20 @@
     color: rgb(230, 137, 17);
 }
 
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    max-width: 1330px;
+}
+.see-more a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin: 0 0 30px 0;
+}
+
+
 /* footer */
 
 .footer{
@@ -132,7 +159,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 250px;
+    flex-direction: column;
 }
 .footer .copyright{
 }
@@ -144,6 +172,119 @@
     color: white;
     text-align: center;
 }
+.footer .social-icon{
+    display: flex;
+    margin: 10px 0;
+}
+.footer .social-icon .icon{
+    margin: 10px;
+}
+.footer .social-icon .icon a .fab{
+    color: white;
+    background: rgb(34, 34, 34);
+    padding: 15px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.contact-form{
+display: flex;
+justify-content: space-around;
+margin: 50px 0;
+}
+.contact-form .form-img{
+    width: 600px;
+    height: 407px;
+}
+.contact-form .form-img img{
+    width: 600px;
+    height: 407px;
+}
+.contact-form .form-input{
+    padding: 26px 0;
+    border-radius: 11px;
+    box-shadow: 0 0 30px 0px rgb(197, 197, 197);
+}
+.contact-form .form-input .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 20px;
+}
+
+.contact-form .form-input .form input{
+    width: 550px;
+    height: 40px;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.contact-form .form-input .form button{
+    width: 250px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.contact-form .form-input .form button:hover{
+    background: #000;
+    color: white;
+}
+
+/* media query starts */
+@media (max-width: 1250px) {
+    .contact-form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form .form-img{
+        margin: 50px 0;
+    }
+}
+@media (max-width: 1100px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+    }
+    
+}
+@media (max-width: 870px) {
+    .top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-icon .icn{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+    .navbar .nav-right ul li:first-child{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
